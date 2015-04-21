@@ -1,6 +1,6 @@
 namespace BreakingInterfaceSegregationPrinciple
 {
-    public class LuxuryCar : IVehcile
+    public class LuxuryCar : IVehicle
     {
         private bool _radioOn;
 
@@ -32,7 +32,7 @@ namespace BreakingInterfaceSegregationPrinciple
         }
     }
 
-    public class MotorCycle : IVehcile
+    public class MotorCycle : IVehicle
     {
         public void Accelerate()
         {
@@ -70,7 +70,7 @@ namespace BreakingInterfaceSegregationPrinciple
         }
     }
 
-    public class BudgetCar : IVehcile
+    public class BudgetCar : IVehicle
     {
         private bool _radioOn;
 

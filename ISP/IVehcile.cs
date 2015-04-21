@@ -1,6 +1,6 @@
 ﻿namespace BreakingInterfaceSegregationPrinciple
 {
-    public interface IVehcile
+    public interface IVehicle
     {
         void Accelerate();
         void Break();
