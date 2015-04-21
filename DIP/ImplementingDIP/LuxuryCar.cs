@@ -9,9 +9,9 @@ namespace ImplementingDIP
 //    entirely with that behaviour, and nothing else (SRP). These could even be reused by different concrete 
 //    classes. For example LuxuryCar and BudgetCar could use the same implementation of IAudioControls.
 //
-//    LuxuryCar is loosely coupled to the Abstractions of IVehicle, IAudioControls and IHeatedSeats instead of being tied into specific classes such as BangAndOlusenSoundSystem, for example, because we are “injecting the dependencies” rather than creating instances inside our class definition.
-
-
+//    LuxuryCar is loosely coupled to the Abstractions of IVehicle, IAudioControls and IOperateSunRoof 
+//    instead of being tied into specific classes such as BangAndOlusenSoundSystem, for example, 
+//    because we are “injecting the dependencies” rather than creating instances inside our class definition.
     #endregion
 
     public class LuxuryCar : IVehicle, IAudioControl, IOperateSunRoof
