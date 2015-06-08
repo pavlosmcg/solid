@@ -1,11 +1,15 @@
-﻿namespace BreakingOpenClosedPrinciple
+﻿using System;
+
+namespace BreakingOpenClosedPrinciple
 {
     public class Product
     {
         private readonly ProductType _type;
+        private readonly decimal _price;
 
-        public Product(ProductType type)
+        public Product(decimal price, ProductType type)
         {
+            _price = price;
             _type = type;
         }
 
@@ -14,20 +18,22 @@
         /// </summary>
         public void Render()
         {
-            if (Type == ProductType.Standard)
+            if (_type == ProductType.Standard)
             {
-                // Do something
+                Console.WriteLine("Hi, I am a standard product that costs £{0}", _price);
             }
 
-            if (Type == ProductType.Featured)
+            if (_type == ProductType.Featured)
             {
-                //Do something a bit more jazzy
+                Console.WriteLine("******* WOO HOOO *******");
+                Console.WriteLine("******* FEATURED PRODUCT HERE **********");
+                Console.WriteLine("******* I COST £{0} **********", _price);
             }
         }
 
-        public ProductType Type
+        public string[] GetImageFileNames()
         {
-            get { return _type; } 
+            return new[] { "image1.jpg", "image2.jpg" };
         }
     }
 
