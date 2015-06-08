@@ -8,7 +8,7 @@ namespace BreakingInterfaceSegregationPrinciple
             // do something to make car go faster
         }
 
-        public void Break(){
+        public void Brake(){
             //do something to make car slow down
         }
 
@@ -39,7 +39,7 @@ namespace BreakingInterfaceSegregationPrinciple
             // do something to make Bike go faster 
         }
 
-        public void Break()
+        public void Brake()
         {
             // do something to make Bike slow down 
         }
@@ -79,7 +79,7 @@ namespace BreakingInterfaceSegregationPrinciple
             // do something to make car go faster
         }
 
-        public void Break()
+        public void Brake()
         {
             //do something to make car slow down
         }

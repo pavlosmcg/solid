@@ -3,7 +3,7 @@
     public interface IVehicle
     {
         void Accelerate();
-        void Break();
+        void Brake();
         void ChangeGear(int gear);
         void TurnOnRadio();
         void TurnOffRadio();
