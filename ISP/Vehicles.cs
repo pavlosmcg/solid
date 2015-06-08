@@ -51,22 +51,22 @@ namespace BreakingInterfaceSegregationPrinciple
 
         public void TurnOnRadio()
         {
-            throw new System.NotImplementedException("I don't have a radio - I'm a motorcycle!");
+            throw new System.NotSupportedException("I don't have a radio - I'm a motorcycle!");
         }
 
         public void TurnOffRadio()
         {
-            throw new System.NotImplementedException("I don't have a radio - I'm a motorcycle!");
+            throw new System.NotSupportedException("I don't have a radio - I'm a motorcycle!");
         }
 
         public void OpenSunRoof(int percentOpen)
         {
-            throw new System.NotImplementedException("I don't have a Sunroof - I'm a motorcycle!");
+            throw new System.NotSupportedException("I don't have a Sunroof - I'm a motorcycle!");
         }
 
         public void CloseSunRoof()
         {
-            throw new System.NotImplementedException("I don't have a Sunroof - I'm a motorcycle!");
+            throw new System.NotSupportedException("I don't have a Sunroof - I'm a motorcycle!");
         }
     }
 
@@ -100,12 +100,12 @@ namespace BreakingInterfaceSegregationPrinciple
 
         public void OpenSunRoof(int percentOpen)
         {
-            throw new System.NotImplementedException("I don't have a Sunroof - It was an optional extra and you didn't shell out for it!");
+            throw new System.NotSupportedException("I don't have a Sunroof - It was an optional extra and you didn't shell out for it!");
         }
 
         public void CloseSunRoof()
         {
-            throw new System.NotImplementedException("I don't have a Sunroof - It was an optional extra and you didn't shell out for it!");
+            throw new System.NotSupportedException("I don't have a Sunroof - It was an optional extra and you didn't shell out for it!");
         }
     }
 }
